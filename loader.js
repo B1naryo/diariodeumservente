@@ -1,4 +1,3 @@
-<meta charset="UTF-8">    
 <script>
         var terminal = document.getElementById("terminal");
         var text = "تم مسح الكمبيوتر ..............................................................................................\n";
