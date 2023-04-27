@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>مثال على تأثير المحطة الطرفية</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+        #terminal {
+            padding: 20px;
+            white-space: pre-wrap;
+            animation: blink-caret 0.75s steps(1) infinite;
+            overflow: auto;
+            height: 500px;
+            box-sizing: border-box;
+            border: 2px solid green;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: green; }
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+
+    <script>
+        var terminal = document.getElementById("terminal");
+        var text = "تم مسح الكمبيوتر ..............................................................................................\n";
+        text += "البحث عن شل كود ................................................\n";
+        text += "العثور على شل كود!\n";
+        text += "تنفيذ شل كود ..................................................................................\n";
+        text += "تم تنفيذ شل كود بنجاح!\n";
+        text += "حقن الحمولة.......................................................................................\n";
+        text += "تم تنفيذ الحمولة!\n";
+        text += "الكمبيوتر المصاب!\n";
+        text += "في انتظار الاتصال .................................................................................\n";
+        text += "تم تأسيس الاتصال\n";
+        var speed = 10;
+        var i = 0;
+
+        function typeEffect() {
+            if (i < text.length) {
+                terminal.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, speed);
+            } else {
+                setTimeout(function() {
+                    window.location.href = "home.html";
+                }, 1000); // Redireciona para index.html após 1 segundo
+            }
+        }
+
+        typeEffect();
+    </script>
+</body>
+</html>
+
