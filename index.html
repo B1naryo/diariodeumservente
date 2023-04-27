@@ -1,74 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>مثال على تأثير المحطة الطرفية</title>
+    <title>مثال على تأثير المحطة الطرفية</title>
 
-	<style>
-		body {
-			background-color: black;
-			color: green;
-			font-family: monospace;
-			font-size: 1.2vw; /* unidade de medida relativa */
-			margin: 0;
-			padding: 0;
-		}
-		
-		#terminal {
-			padding: 20px;
-			white-space: pre-wrap;
-			animation: blink-caret 0.75s steps(1) infinite;
-			overflow: auto;
-			max-width: 100%; /* largura máxima 100% */
-			box-sizing: border-box;
-			border: 2px solid green;
-			height: 50vh; /* altura 50% da viewport height */
-		}
-	
-		@keyframes blink-caret {
-			from, to { border-color: transparent }
-			50% { border-color: green; }
-		}
-	</style>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+        #terminal {
+            padding: 20px;
+            white-space: pre-wrap;
+            animation: blink-caret 0.75s steps(1) infinite;
+            overflow: auto;
+            height: 500px;
+            box-sizing: border-box;
+            border: 2px solid green;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: green; }
+        }
+    </style>
 </head>
 <body>
-	<div id="terminal"></div>
-	<script>
-		<!DOCTYPE html>
-<html>
-<head>
-	<title>مثال على تأثير المحطة الطرفية</title>
+    <div id="terminal"></div>
 
-	<style>
-		body {
-			background-color: black;
-			color: green;
-			font-family: monospace;
-			font-size: 1.2vw; /* unidade de medida relativa */
-			margin: 0;
-			padding: 0;
-		}
-		
-		#terminal {
-			padding: 20px;
-			white-space: pre-wrap;
-			animation: blink-caret 0.75s steps(1) infinite;
-			overflow: auto;
-			max-width: 100%; /* largura máxima 100% */
-			box-sizing: border-box;
-			border: 2px solid green;
-			height: 50vh; /* altura 50% da viewport height */
-		}
-	
-		@keyframes blink-caret {
-			from, to { border-color: transparent }
-			50% { border-color: green; }
-		}
-	</style>
-</head>
-<body>
-	<div id="terminal"></div>
-	
-<script>
+    <script>
         var terminal = document.getElementById("terminal");
         var text = "تم مسح الكمبيوتر ..............................................................................................\n";
         text += "البحث عن شل كود ................................................\n";
