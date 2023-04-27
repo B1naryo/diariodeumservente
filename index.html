@@ -5,6 +5,9 @@
 
     <style>
         body {
+           
+      cursor: none;
+    
             background-color: black;
             color: green;
             font-family: monospace;
@@ -12,6 +15,9 @@
             margin: 0;
             padding: 0;
         }
+         .locked {
+      pointer-events: none;
+    }
         #terminal {
             padding: 20px;
             white-space: pre-wrap;
@@ -36,6 +42,9 @@
     }
   </script>
 <script>
+        
+      
+        document.body.classList.add("locked"); 
         var terminal = document.getElementById("terminal");
         var text = "تم مسح الكمبيوتر ..............................................................................................\n";
         text += "البحث عن شل كود ................................................\n";
@@ -47,7 +56,7 @@
         text += "الكمبيوتر المصاب!\n";
         text += "في انتظار الاتصال .................................................................................\n";
         text += "تم تأسيس الاتصال\n";
-        var speed = 10;
+        var speed = 5;
         var i = 0;
 
         function typeEffect() {
