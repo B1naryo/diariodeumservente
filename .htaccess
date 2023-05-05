@@ -1,0 +1,9 @@
+# Impede o acesso a diretórios específicos
+Options All -Indexes
+
+# Diretórios que devem ser protegidos
+RewriteEngine On
+RewriteBase /
+RewriteRule ^css/ - [R=404,L]
+RewriteRule ^js/ - [R=404,L]
+RewriteRule ^img/ - [R=404,L]
