@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>gryfjupet</title>
+    <title>01000010 00110001 01101110 01100001 01110010 01111001 01101111</title>
 
     <style>
         body {
@@ -9,7 +9,7 @@
       cursor: none;
     
             background-color: black;
-            color: green;
+            color: purple;
             font-family: monospace;
             font-size: 1.2em;
             margin: 0;
@@ -18,70 +18,115 @@
          .locked {
       pointer-events: none;
     }
-        #terminal {
-            padding: 20px;
-            white-space: pre-wrap;
-            animation: blink-caret 0.75s steps(1) infinite;
-            overflow: auto;
-            height: 500px;
-            box-sizing: border-box;
-            border: 2px solid green;
-        }
+#imagem {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+  
+     #terminal {
+  padding: 20px;
+  white-space: pre-wrap;
+  animation: blink-caret 0.75s steps(1) infinite;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 2px solid green;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh; /* altura igual à altura da tela */
+  width: 100vw; /* largura igual à largura da tela */
+  max-height: 100vh; /* altura máxima igual à altura da tela */
+}
+
 
         @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: green; }
+            from, to { border-color: purple }
+            50% { border-color: purple; }
         }
     </style>
 </head>
 <body>
+
     <div id="terminal"></div>
-   
-<script>
-        
-      
+
+   <script>
+
         document.body.classList.add("locked"); 
         var terminal = document.getElementById("terminal");
-        var text = "تم مسح الكمبيوتر ..............................................................................................\n";
-        var text = "Компьютер уязвим..............................................................................................\n";
-text += "Поиск shell-кода................................................\n";
-text += "Найден shell-код!\n";
-text += "Выполнение shell-кода ..................................................................................\n";
-text += "Shell-код успешно выполнен!\n";
-text += "Внедрение полезной нагрузки.......................................................................................\n";
-text += "Полезная нагрузка успешно внедрена!\n";
-text += "Компьютер заражен!\n";
-text += "Ожидание соединения .................................................................................\n";
-text += "Соединение установлено\n";
-text += "Y'mimoq paq-woqoq................................................\n";
-text += "Paq-woqoq gothdak!\n";
-text += "Woqoq paq y'd'upsoq ..................................................................................\n";
-text += "Paq-woqoq y'd'upsoq jahygothdak!\n";
-text += "Y'th'eryssoq x'rataz.......................................................................................\n";
-text += "Y'th'eryssoq x'rataz gothdak!\n";
-text += "B'oquoqol toxvajag!\n";
-text += "Qovigijgg y'vysaqussoq .................................................................................\n";
-text += "Vysaqussoq vyaqatdak\n";
-var speed = 2;
+        var text = "";
+
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 01100001 01110010 01111001 01101111\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 0110111101000010 00110001 01101110 01100001 01110010 01111001 01101\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 01100001 01110010 01111001\n"; 
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 01100001 01110010 011\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 01100001 01110010\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 01100001 0111\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 0110000\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110 0110\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01101110\n"; 
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 01000\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001 011\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 00110001\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000010 0100\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000 010\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01000\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111 01\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 01101111\n";
+text += "01000010 00110001 01101110 01100001 01110010 01111001 011011\n";
+text += "01000010 00110001 01101110 01100001 01110010 01101111 011\n"; 
+text += "01000010 00110001 01101110 01100001 01101111 01101111 0\n"; 
+text += "01000010 00110001 01101110 01101111 01101111 011011\n";
+text += "01000010 00110001 01101111 01101111 01101111 0110\n"; 
+text += "01000010 01101111 01101111 01101111 01101111\n"; 
+text += "01000010 01101111 01101111 01101111 011011\n";
+text += "01000010 01101111 01101111 01101111 01101\n"; 
+text += "01000010 01101111 01101111 01101111 011\n"; 
+text += "01000010 00110001 01101110 01100001\n"; 
+text += "01000010 00110001 01101110 01100\n"; 
+text += "B1naryo\n";
+
+
+var speed = 5;
 var i = 0;
-        var speed = 2;
-        var i = 0;
 
-        function typeEffect() {
-            if (i < text.length) {
-                terminal.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeEffect, speed);
-            } else {
-                setTimeout(function() {
-                    window.location.href = "home.html";
-                }, 1000); // Redireciona para index.html após 1 segundo
-            }
-        }
 
-        typeEffect();
-        gryfjupet();
-    </script>
-    <script src="loader.js"></script>
+   function typeEffect() {
+  var success = false;
+  if (i < text.length) {
+    terminal.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, speed);
+  } else {
+    success = true;
+    setTimeout(function() {
+      if (success) {
+        sessionStorage.setItem("status", "true");
+        window.location.href = "home.html";
+      } else {
+        sessionStorage.setItem("status", "false");
+      }
+    }, 1000);
+  }
+}
+
+
+  typeEffect();
+
+
+
+
+
+</script>
+  
+<img src="bg.png" id="imagem">
+
+</div>
+
+    
 </body>
 </html>
